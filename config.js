@@ -3,7 +3,7 @@ let config;
 if (process.env.NODE_ENV === 'production') {
   config = {
     environment: 'production',
-    baseUrl : 'example.com',
+    baseUrl : 'https://file-uploader-y.onrender.com'
     // Other production-specific configurations
   };
 } else {
