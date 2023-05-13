@@ -6,11 +6,7 @@ const cors = require('cors');
 const multer = require('multer');
 const port = 3000 || process.env.PORT;
 const app = express();
-<<<<<<< HEAD
 const config = require('./config')
-=======
-
->>>>>>> origin/main
 app.use(morgan('dev'));
 app.use(cors());
 app.use(express.urlencoded())
@@ -45,11 +41,7 @@ app.post('/uploadfile' ,  function (req,res){
             return res.status(500).json({ message: 'Internal Server Error', error: err.message });
         }
         // console.log("req filpath",req.filePath);
-<<<<<<< HEAD
         res.status(200).json({message:"File uploaded successfully!",path : `${config.baseUrl}${req.filePath}` });
-=======
-        res.status(200).json({message:"File uploaded successfully!",path : `http://localhost:3000${req.filePath}` });
->>>>>>> origin/main
     })
 })
 
